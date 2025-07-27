@@ -28,6 +28,7 @@ async function showWether(city){
   temprature.innerHTML = `${Math.round(data.main.temp-273.15)}°C`
   humidity.innerHTML = `${data.main.humidity}%`
   winDetails.innerHTML = `${data.wind.speed}Km/H`
+  tempDescraption.innerHTML = `${data.weather[0].description}`
   
       switch (data.weather[0].main) {
       case 'Clouds':
