@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Weather App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <div class="container">
+    
+    
+    <div class="navBar">
+      <input type="text" name="country" id="country"placeholder="Enter your location">
+      <button id="searchBtn" class="bi bi-search"></button>
+    </div>
+    
+    
+    <div class="tempDetails">
+      <div class="img">
+        <img id="image" src="/assest/cloud.png" alt="weather Img" width="250" />
+      </div>
+      <div class="tempInfo">
+        <p class="temp bi bi-thermometer-half">0<sup>°C</sup></p>
+        <p class="tempDescraption">light rain</p>
+      </div>
+    </div>
+    
+    
+    <div class="wetherDetails">
+      <div class="humidity">
+        <i class="bi bi-moisture"></i>
+        <div class="humInfo">
+          <span class="humPercantage">0%</span>
+          <p>Humidity</p>
+        </div>
+      </div>
+      <div class="wind">
+        <i class="bi bi-tornado"></i>
+        <div class="winInfo">
+          <span class="winDetails">0Km/H</span>
+          <p>Wind speed</p>
+        </div>
+      </div>
+    </div>
+    <div class="locationNotFound">
+      <h1>location not found</h1>
+      <img src="/assest/404.png" alt="404 locations not Found" width="250">
+    </div>
+  </div>
+  
+
+  <script src="main.js"></script>
+  
+</body>
+
+</html>
