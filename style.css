@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: "Outfit", sans-serif;
+}
+
+html,body {
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6f6f6;
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction:column;
+    gap:1.5rem;
+    width:90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 25px;
+    background: white;
+}
+.navBar{
+    display:flex;
+    justify-content: space-between;
+    gap:10px;
+    width: 100%;
+}
+.navBar input,.navBar button {
+    border:none;
+    color:#000;
+    outline: none;
+    background: #e6f5fb;
+    padding: 12px;
+    border-radius: 10px;
+    font-size:16px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border:1px solid #A5E5FF;
+}
+.navBar input::placeholder {
+    color:#000;
+}
+
+.navBar input:focus,.navBar button:focus {
+    background: #7DD7FB;
+    transform: scale(1.05);
+    transition:all 0.3s ease;
+}
+
+.tempDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.tempInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 25px;
+    position: relative;
+}
+.tempInfo sup{
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+}
+.tempInfo .tempDescraption{
+    text-transform: capitalize;
+}
+
+.wetherDetails{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+}
+.humidity,.wind{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
+}
+.wetherDetails i{
+    font-size:35px;
+}
+
+.humidity span,.wind span{
+    font-size: 25px;
+}
+
+.wetherDetails,.tempDetails{
+    display: none;
+}
+
+.locationNotFound{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.locationNotFound h1 {
+    color:#6b6b6b;
+    font-size:20px;
+}
