@@ -31,16 +31,16 @@ async function showWether(city){
   
       switch (data.weather[0].main) {
       case 'Clouds':
-        weatherImg.src = "/assest/cloud.png";
+        weatherImg.src = "assest/cloud.png";
         break;
       case 'Clear':
-        weatherImg.src = "/assest/clear.png";
+        weatherImg.src = "assest/clear.png";
         break;
       case 'Rain':
-        weatherImg.src = "/assest/rain.png";
+        weatherImg.src = "assest/rain.png";
         break;
       case 'Snow':
-        weatherImg.src = "/assest/snow.png";
+        weatherImg.src = "assest/snow.png";
         break;
         
     }
